@@ -4,26 +4,26 @@
 /* ===== CSS VARIABLES ===== */
 :root {
   /* Color Palette */
-  --primary-black: #1e1e1e;
-  --secondary-black: #2d2d2d;
-  --primary-gold: #c5a059;
-  --secondary-gold: #b3893c;
-  --accent-red: #9b2c2c;
-  --accent-brown: #5d3a1a;
+  --primary-black: #0d1b2a;      /* Deep navy instead of flat black */
+  --secondary-black: #1b263b;    /* Softer dark blue for contrast */
+  --primary-gold: #d4af37;       /* Champagne gold */
+  --secondary-gold: #b9975b;     /* Muted antique gold */
+  --accent-red: #7b1e3a;         /* Royal burgundy */
+  --accent-brown: #4b3832;       /* Rich espresso brown */
   
   /* Text Colors */
   --text-light: #ffffff;
-  --text-offwhite: #f5f5f5;
-  --text-gray: #b0b0b0;
+  --text-offwhite: #f8f4e3;      /* Warm off‑white */
+  --text-gray: #a9b0b8;          /* Cool gray for balance */
   
   /* Overlays & Effects */
-  --overlay-dark: rgba(0, 0, 0, 0.8);
-  --overlay-light: rgba(255, 255, 255, 0.05);
+  --overlay-dark: rgba(13, 27, 42, 0.85);
+  --overlay-light: rgba(255, 255, 255, 0.08);
   
   /* Shadows */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.2);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.15);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.25);
   
   /* Transitions */
   --transition: all 0.3s ease;
@@ -114,7 +114,7 @@ section:nth-child(even) {
 
 /* ===== HEADER & NAVIGATION ===== */
 header {
-  background-color: rgba(30, 30, 30, 0.95);
+  background-color:var(--primary-black);
   backdrop-filter: blur(10px);
   padding: 1rem 5%;
   display: flex;
@@ -380,11 +380,13 @@ body.menu-open::before {
   background: linear-gradient(135deg, var(--primary-gold), var(--accent-red));
   color: var(--text-light);
   box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+  border-color: var(--primary-gold);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(197, 160, 89, 0.4);
+  box-shadow: 0 6px 20px rgba(255, 202, 104, 0.5);
+  background-position: right center;
   border-color: var(--text-light);
 }
 
@@ -396,6 +398,7 @@ body.menu-open::before {
 
 .btn-outline:hover {
   background: var(--primary-gold);
+  box-shadow: 0 6px 20px rgba(255, 202, 104, 0.5);
   color: var(--primary-black);
   transform: translateY(-2px);
 }
@@ -405,6 +408,7 @@ body.menu-open::before {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+  overflow: visible;
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -811,6 +815,7 @@ footer {
   gap: 1rem;
   margin-top: 1rem;
   flex-wrap: wrap;
+  overflow: visible;
 }
 
 .social-links a {

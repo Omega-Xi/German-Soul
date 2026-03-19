@@ -1,0 +1,76 @@
+:root {
+  --primary-black: #1e1e1e;
+  --secondary-black: #2d2d2d;
+  --primary-gold: #c5a059;
+  --accent-red: #9b2c2c;
+
+  --text-light: #ffffff;
+  --text-offwhite: #f5f5f5;
+  --text-gray: #666666;
+
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fafafa;
+  color: var(--primary-black);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.policy-header {
+  background: var(--secondary-black);
+  color: var(--text-light);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.policy-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.policy-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.policy-container h2 {
+  color: var(--primary-black);
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  border-bottom: 2px solid var(--primary-gold);
+  padding-bottom: 0.3rem;
+}
+
+.policy-container p, 
+.policy-container ul {
+  color: var(--text-gray);
+  margin-top: 0.5rem;
+}
+
+.policy-container ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.policy-container a {
+  color: var(--accent-red);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.policy-container a:hover {
+  text-decoration: underline;
+}
+
+.policy-footer {
+  background: var(--secondary-black);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-offwhite);
+}
