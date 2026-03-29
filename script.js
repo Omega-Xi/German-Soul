@@ -16,9 +16,9 @@ const mobileNav = document.getElementById('mobileNav');
 // IMPORTANT: Replace these with your actual EmailJS credentials
 // Get them from: https://www.emailjs.com
 const EMAILJS_CONFIG = {
-    PUBLIC_KEY: 'YOUR_PUBLIC_KEY_HERE',     // From Account > API Keys
-    SERVICE_ID: 'YOUR_SERVICE_ID_HERE',     // From Email Services
-    TEMPLATE_ID: 'YOUR_TEMPLATE_ID_HERE'    // From Email Templates
+    PUBLIC_KEY: '_b9oKptcJCO8jvJ0t',     // From Account > API Keys
+    SERVICE_ID: 'service_6wcyrx2',     // From Email Services
+    TEMPLATE_ID: 'template_uyf65pe'    // From Email Templates
 };
 
 // ===== INITIALIZATION =====
@@ -182,8 +182,8 @@ function handleFormSubmit(e) {
     
     // Prepare template parameters for EmailJS [citation:5][citation:6]
     const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
+        name: formData.name,
+        email: formData.email,
         phone: formData.phone,
         course: formData.course,
         message: formData.message,
